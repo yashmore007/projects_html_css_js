@@ -85,6 +85,7 @@ body{
 .songList img{
  width: 30px;
  margin-left: 12px;
+ border-radius: 12px;
 }
 .songItem {
   display: flex;
@@ -96,6 +97,7 @@ body{
   width: 50%;
 
 }
+
 .songinfo{
   position: absolute;
   left: 10vw;

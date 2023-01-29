@@ -26,15 +26,20 @@ songItems.forEach((element,i)=>{
 
 masterPlay.addEventListener("click",()=>{
    if(audioElement.paused || audioElement.currentTime<=0){
-     audioElement.play();
+   
+    audioElement.play();
      masterPlay.classList.remove("fa-play");
      masterPlay.classList.add("fa-pause");
+     document.getElementById(songIndex).classList.remove("fa-play")
+     document.getElementById(songIndex).classList.add("fa-pause")
      gif.style.opacity=1
 }
 else{
      audioElement.pause();
      masterPlay.classList.remove("fa-pause");
      masterPlay.classList.add("fa-play");
+     document.getElementById(songIndex).classList.remove("fa-pause")
+     document.getElementById(songIndex).classList.add("fa-play")
      gif.style.opacity=0;
 }
 })
